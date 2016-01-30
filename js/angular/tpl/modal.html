@@ -1,0 +1,23 @@
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog view-modal">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h2 ng-bind-html="title"></h2s>
+      </div>
+      <div class="modal-body row">
+        <div class="col-xs-12" ng-repeat="image in images">
+          <a ng-href="{{image}}"><img ng-src="{{image}}" /></a>
+        </div>
+
+        <div class="col-xs-12">
+          <div ng-bind-html="text"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
