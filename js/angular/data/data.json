@@ -1,0 +1,21 @@
+{
+    "items": [
+        {
+            "title": "My first stool - 2010",
+            "cover": "http://placehold.it/350x600",
+            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p>",
+            "images": [
+                        "http://i.imgur.com/16Fu04z.jpg",
+                        "http://i.imgur.com/zAYbjQu.jpg"
+                    ]
+          },
+          {
+            "title": "Ceramic bowl",
+            "cover": "http://placehold.it/350x600"
+          },
+          {
+            "title": "Lips",
+            "cover": "http://placehold.it/350x600"
+          }
+    ]
+}
