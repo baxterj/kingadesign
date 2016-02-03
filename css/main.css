@@ -111,6 +111,10 @@ body .view-modal img {
     max-width: 400px;
 }
 
+body .modal-content {
+    border-radius: 0px;
+}
+
 @media screen and (min-width: 768px) {
     body .view-modal {
         width: 70%; /* either % (e.g. 60%) or px (400px) */
@@ -123,7 +127,26 @@ body .view-modal img {
     width: 100%;
 }
 
+.nextPrevious {
+    display: none;
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    font-size: 40px;
+    color: #CCC;
+}
 
+.nextPrevious :active, .nextPrevious :hover {
+    color: #FFF;
+}
+
+.nextPrevious.next {
+    right: 10%;
+}
+
+.nextPrevious.previous {
+    left: 10%;
+}
 
 /* ==========================================================================
    Helper classes

@@ -1,5 +1,8 @@
 myApp.directive("kingaHeader", function() {
     return {
+        controller: function($scope, $http) {
+            
+        },
         templateUrl: "js/angular/tpl/header.html"
     }
 });

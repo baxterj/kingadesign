@@ -1,5 +1,7 @@
 myApp.controller("HomeController", function($scope, $http) {
 
+    $scope.selectedId = 0;
+
     $http({
         method: 'GET',
         url: 'js/angular/data/data.json'
@@ -7,7 +9,7 @@ myApp.controller("HomeController", function($scope, $http) {
         $scope.data = response.data.items;
         $scope.initializeCarousel();
     }, function errorCallback(response) {
-        $scope.goHome();
+        // |_|
     });
 
     $scope.initializeCarousel = function() {
@@ -29,17 +31,49 @@ myApp.controller("HomeController", function($scope, $http) {
         $scope.owl = $(".owl-carousel").data('owlCarousel');
 
         $('.owl-carousel').on('click', '.owl-item', function (e) {
-            var selectedId = $(this).find('.carousel-item').data('id');
-            // $rootScope.$emit('showView', {id: selectedId})
+            $scope.selectedId = $(this).find('.carousel-item').data('id');
             $scope.$apply(function() {
-                $scope.selectedData = $scope.data[selectedId];
-                $("#myModal").modal(true);
-            });
+                $scope.updateModalContent();
+            }); 
         });
-    }
-    
-    $('#myModal').on('hidden.bs.modal', function () {
-        $("#myModal").modal('hide');
-    });   
+    };
+
+    $scope.updateModalContent = function() {
+        $scope.selectedData = $scope.data[$scope.selectedId];
+        $scope.showNextPrevious(true);
+        $("#myModal").modal(true);
+    };
+
+    $(document).on('hidden.bs.modal', '#myModal', function(){
+        $scope.showNextPrevious(false);
+    });
+
+    $scope.showNextPrevious = function(doShow) {
+        if (doShow === true) {
+            $('.nextPrevious').fadeIn(300);
+        } else {
+            $('.nextPrevious').fadeOut(0);
+        }
+    };
+
+    $scope.doNext = function() {
+        if ($scope.selectedId < $scope.data.length - 1) {
+            $scope.selectedId++;
+        } else {
+            $scope.selectedId = 0;
+        }
+        
+        $scope.updateModalContent();
+    };
+
+    $scope.doPrevious = function() {
+        if ($scope.selectedId > 0) {
+            $scope.selectedId--;
+        } else {
+            $scope.selectedId = $scope.data.length - 1;
+        }
+        
+        $scope.updateModalContent();
+    };
 
 });
