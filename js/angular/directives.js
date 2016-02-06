@@ -16,9 +16,8 @@ myApp.directive("kingaFooter", function() {
 myApp.directive("kingaModal", function() {
     return {
         scope: {
-            text: '=',
-            images: '=',
-            title: '='
+            data: '=',
+            modalId: '@',
         },
         templateUrl: "js/angular/tpl/modal.html"
     }

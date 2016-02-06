@@ -2,7 +2,7 @@
     "items": [
         {
             "title": "My first stool - 2010",
-            "cover": "http://placehold.it/350x600",
+            "cover": "http://placehold.it/100x600",
             "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p>",
             "images": [
                         "http://i.imgur.com/16Fu04z.jpg",
@@ -10,12 +10,29 @@
                     ]
           },
           {
-            "title": "Ceramic bowl",
+            "title": "Desert stool - 2015",
             "cover": "http://placehold.it/350x600"
           },
           {
-            "title": "Lips",
-            "cover": "http://placehold.it/350x600"
+            "title": "Metal Bowl - 2015",
+            "cover": "http://placehold.it/900x600"
+          },
+          {
+            "title": "Plastic bowl - 2015",
+            "cover": "http://placehold.it/400x600"
+          },
+          {
+            "title": "Ceramic bowl - 2015",
+            "cover": "http://placehold.it/900x600",
+            "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=related-2",
+            "images": [
+                        "http://i.imgur.com/QPq5Z1W.jpg",
+                        "http://i.imgur.com/drhr3NO.jpg",
+                        "http://i.imgur.com/XKz5MfR.jpg",
+                        "http://i.imgur.com/z9pShQs.jpg",
+                        "http://i.imgur.com/W7RZqqI.jpg"
+                    ]
           }
+
     ]
 }

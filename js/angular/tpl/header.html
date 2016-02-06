@@ -1,8 +1,14 @@
-<div class="row">
-    <div class="col-xs-12"><h1>Kinga Lachwa</h1></div>
-    <div class="col-xs-12">
-        <a href="#" ui-sref="home.view({name: 'info'})">Info</a>
-        <a href="https://www.etsy.com/uk/shop/KingaSpaceMonster" target="_blank">Store</a>
+<header ng-controller="HeaderController">
+    <div class="row">
+        <div class="col-xs-12"><img class="banner" src="http://i.imgur.com/nX3PiFA.png" alt="banner" /></div>
     </div>
-    
-</div>
+    <div class="row header-links links">
+        <!--<div class="col-xs-12"><h1>Kinga Lachwa</h1></div>-->
+        <div class="col-xs-12">
+            <a href="#" ng-click="displayInfo()">Info</a>
+            <a href="https://www.etsy.com/uk/shop/KingaSpaceMonster" target="_blank">Store</a>
+        </div>
+        
+    </div>
+     <div kinga-modal="" modal-id="infoModal" data="infoData"></div> 
+</header>

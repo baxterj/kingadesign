@@ -127,6 +127,69 @@ body .modal-content {
     width: 100%;
 }
 
+#owl-example .owl-stage {
+  width: 99999px!important;
+}
+
+#owl-example .carousel-item {
+  width: 883px;
+  width: 46vw;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+#owl-example .portrait {
+  height: 589px;
+  height: 30.7vw;
+  padding-bottom: 0;
+  overflow: visible;
+}
+#owl-example img {
+  height: auto;
+}
+#owl-example .portrait img {
+  width: auto;
+  height: 100%;
+}
+
+#owl-example .owl-stage-outer {
+  padding-bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    #owl-example .carousel-item {
+        width: 235px;
+        width: 70vw;
+    }
+    #owl-example .portrait {
+        height: 156px;
+        height: 46.6vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #owl-example .carousel-item {
+        width: 235px;
+        width: 70vw;
+    }
+    #owl-example .portrait {
+        height: 335px;
+        height: 46.6vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    #owl-example .carousel-item {
+        width: 235px;
+        width: 68vw;
+    }
+    #owl-example .portrait {
+        height: 464px;
+        height: 45.3vw;
+    }
+}
+
 .nextPrevious {
     display: none;
     z-index: 9999999;
@@ -146,6 +209,60 @@ body .modal-content {
 
 .nextPrevious.previous {
     left: 10%;
+}
+
+body h1, body h2, body h3, body h4 {
+    font-family: "Passion One", Helvetia, sans-serif;
+}
+
+body .container {
+    font-family: "Lato", Helvetica, sans-serif;
+    width: 100%;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer a {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner {
+    width: 100%;
+    max-width: 800px;
+}
+
+.header-links {
+    margin-top: 10px;
+}
+
+body a {
+    color: #111;
+}
+
+body a:hover, body a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+.links a {
+    display: inline-block;
+    min-width: 75px;
+    font-size: 18px;
+    text-align: center;
 }
 
 /* ==========================================================================

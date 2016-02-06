@@ -15,7 +15,7 @@ myApp.controller("HomeController", function($scope, $http) {
     $scope.initializeCarousel = function() {
         var html = "";
         angular.forEach($scope.data, function(value, key) {
-            html += '<div class="carousel-item" data-id="' + key + '">\n'
+            html += '<div class="carousel-item portrait" style="width:auto;" data-id="' + key + '">\n'
                 + '<img src="' + value.cover + '" />\n'
                 + '</div>\n';
         })
@@ -26,25 +26,46 @@ myApp.controller("HomeController", function($scope, $http) {
             autoWidth: true,
             margin: 10,
             center: true,
-            loop: true
+            loop: true,
+            // items: 1
         });
+        $scope.owlHome = $(".owl-carousel");
         $scope.owl = $(".owl-carousel").data('owlCarousel');
 
-        $('.owl-carousel').on('click', '.owl-item', function (e) {
+        $('.owl-carousel').on('click', '.owl-item', function(e) {
             $scope.selectedId = $(this).find('.carousel-item').data('id');
             $scope.$apply(function() {
                 $scope.updateModalContent();
             }); 
         });
+
+        $(document.documentElement).keydown(function(e) {
+            if (e.keyCode === 37) {
+                $scope.owlHome.trigger('prev.owl');
+            } else if (e.keyCode === 39) {
+                $scope.owlHome.trigger('next.owl');
+            }
+        });
+
+        // $('.owl-carousel').on('mousewheel', '.owl-item', function(e) {
+        //     if ($(window).width() > 768) {
+        //         if (e.originalEvent.wheelDelta / 120 > 0) {
+        //             $scope.owlHome.trigger('prev.owl');
+        //         } else {
+        //             $scope.owlHome.trigger('next.owl');
+        //         }
+        //         e.preventDefault();
+        //     };
+        // });
     };
 
     $scope.updateModalContent = function() {
         $scope.selectedData = $scope.data[$scope.selectedId];
         $scope.showNextPrevious(true);
-        $("#myModal").modal(true);
+        $("#contentModal").modal(true);
     };
 
-    $(document).on('hidden.bs.modal', '#myModal', function(){
+    $(document).on('hidden.bs.modal', '#contentModal', function(){
         $scope.showNextPrevious(false);
     });
 
@@ -75,5 +96,22 @@ myApp.controller("HomeController", function($scope, $http) {
         
         $scope.updateModalContent();
     };
+
+});
+
+myApp.controller("HeaderController", function($scope, $http) {
+
+    $http({
+        method: 'GET',
+        url: 'js/angular/data/info.json'
+    }).then(function successCallback(response) {
+        $scope.infoData = response.data;
+    }, function errorCallback(response) {
+        // |_|
+    });
+
+    $scope.displayInfo = function() {
+        $("#infoModal").modal(true);
+    }
 
 });
