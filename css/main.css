@@ -121,6 +121,10 @@ body .modal-content {
     }
 }
 
+.view-modal img {
+    width: 100%;
+}
+
 #owl-example .carousel-item img {
     display: block;
     height: auto;
