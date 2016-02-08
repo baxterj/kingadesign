@@ -19,6 +19,9 @@ myApp.directive("kingaModal", function() {
             data: '=',
             modalId: '@',
         },
+        controller: function($scope, $sce) {
+            $scope.sce = $sce;
+        },
         templateUrl: "js/angular/tpl/modal.html"
     }
 })

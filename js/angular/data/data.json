@@ -37,15 +37,6 @@
                     ]
           },
           {
-            "title": "My first stool - 2010",
-            "cover": "http://i.imgur.com/OtVETlm.jpg",
-            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
-            "images": [
-                        "http://i.imgur.com/OtVETlm.jpg",
-                        "http://i.imgur.com/S6xgZsP.jpg"
-                    ]
-          },
-          {
             "title": "Kitchen poster - 2014",
             "cover": "http://i.imgur.com/m5iDra0.jpg",
             "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
@@ -61,6 +52,9 @@
             "text": "A quick model of an octopus dressed up as a ghost saying “Boooozzze”.",
             "images": [
                         "http://i.imgur.com/AwI6r5M.jpg"
+                    ],
+            "videos": [
+                        "https://www.youtube.com/embed/cDEfw6gs2uY"
                     ]
           },
           {

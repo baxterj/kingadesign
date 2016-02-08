@@ -112,13 +112,26 @@ body .view-modal img {
     width: 100%;
 }
 
+body .modal-videos {
+    width: 100%;
+}
+
+body .modal-videos iframe {
+    height: 300px;
+}
+
+body .view-modal .modal-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 body .modal-content {
     border-radius: 0px;
 }
 
 @media screen and (min-width: 768px) {
     body .view-modal {
-        width: 70%; /* either % (e.g. 60%) or px (400px) */
+        width: 80%; /* either % (e.g. 60%) or px (400px) */
     }
 }
 
@@ -157,6 +170,43 @@ body .modal-content {
   padding-bottom: 0;
 }
 
+.nextPrevious {
+    display: none;
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    font-size: 40px;
+    color: #CCC;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.nextPrevious :active, .nextPrevious :hover {
+    color: #FFF;
+}
+
+.nextPrevious.next {
+    right: 10%;
+}
+
+.nextPrevious.previous {
+    left: 10%;
+}
+
+@media screen and (max-width: 480px) {
+    .nextPrevious {
+        color: #666;
+    }
+    .nextPrevious.next {
+        right: 2%;
+    }
+
+    .nextPrevious.previous {
+        left: 2%;
+    }
+    .nextPrevious :active, .nextPrevious :hover {
+        color: #666;
+    }
+}
 
 @media screen and (max-width: 768px) {
     #owl-example .carousel-item {
@@ -191,26 +241,6 @@ body .modal-content {
     }
 }
 
-.nextPrevious {
-    display: none;
-    z-index: 9999999;
-    position: fixed;
-    top: 50%;
-    font-size: 40px;
-    color: #CCC;
-}
-
-.nextPrevious :active, .nextPrevious :hover {
-    color: #FFF;
-}
-
-.nextPrevious.next {
-    right: 10%;
-}
-
-.nextPrevious.previous {
-    left: 10%;
-}
 
 body h1, body h2, body h3, body h4 {
     font-family: "Passion One", Helvetia, sans-serif;
