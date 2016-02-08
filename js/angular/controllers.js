@@ -4,7 +4,7 @@ myApp.controller("HomeController", function($scope, $http) {
 
     $http({
         method: 'GET',
-        url: 'js/angular/data/data.json'
+        url: 'data/data.json'
     }).then(function successCallback(response) {
         $scope.data = response.data.items;
         $scope.initializeCarousel();
@@ -103,7 +103,7 @@ myApp.controller("FooterController", function($scope, $http) {
 
     $http({
         method: 'GET',
-        url: 'js/angular/data/info.json'
+        url: 'data/info.json'
     }).then(function successCallback(response) {
         $scope.infoData = response.data;
     }, function errorCallback(response) {
