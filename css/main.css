@@ -109,6 +109,7 @@ body .view-modal {
 
 body .view-modal img {
     max-width: 400px;
+    width: 100%;
 }
 
 body .modal-content {
@@ -119,10 +120,6 @@ body .modal-content {
     body .view-modal {
         width: 70%; /* either % (e.g. 60%) or px (400px) */
     }
-}
-
-.view-modal img {
-    width: 100%;
 }
 
 #owl-example .carousel-item img {
