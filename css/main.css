@@ -140,7 +140,7 @@ body .modal-content {
   padding-bottom: 40px;
 }
 #owl-example .portrait {
-  height: 589px;
+  max-height: 500px;
   height: 30.7vw;
   padding-bottom: 0;
   overflow: visible;

@@ -2,35 +2,78 @@
     "items": [
         {
             "title": "My first stool - 2010",
-            "cover": "http://placehold.it/100x600",
-            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p>",
+            "cover": "http://i.imgur.com/OtVETlm.jpg",
+            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
             "images": [
-                        "http://i.imgur.com/16Fu04z.jpg",
-                        "http://i.imgur.com/zAYbjQu.jpg"
+                        "http://i.imgur.com/OtVETlm.jpg",
+                        "http://i.imgur.com/S6xgZsP.jpg"
                     ]
           },
           {
-            "title": "Desert stool - 2015",
-            "cover": "http://placehold.it/350x600"
-          },
-          {
-            "title": "Metal Bowl - 2015",
-            "cover": "http://placehold.it/900x600"
-          },
-          {
-            "title": "Plastic bowl - 2015",
-            "cover": "http://placehold.it/400x600"
-          },
-          {
             "title": "Ceramic bowl - 2015",
-            "cover": "http://placehold.it/900x600",
-            "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=related-2",
+            "cover": "http://i.imgur.com/AWoizXb.jpg",
+            "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=kingadesign",
             "images": [
-                        "http://i.imgur.com/QPq5Z1W.jpg",
-                        "http://i.imgur.com/drhr3NO.jpg",
-                        "http://i.imgur.com/XKz5MfR.jpg",
-                        "http://i.imgur.com/z9pShQs.jpg",
-                        "http://i.imgur.com/W7RZqqI.jpg"
+                        "http://i.imgur.com/AWoizXb.jpg",
+                        "http://i.imgur.com/NpUytA5.jpg",
+                        "http://i.imgur.com/Teuk7DS.jpg",
+                        "http://i.imgur.com/wwE7cWy.jpg"
+                    ]
+          },
+          {
+            "title": "Läpp candle holder - 2015",
+            "cover": "http://i.imgur.com/oxKdwwE.jpg",
+            "store": "https://www.etsy.com/uk/listing/251780563/lapp-candle-holder-lips-erotic-fun?ref=kingadesign",
+            "images": [
+                        "http://i.imgur.com/oxKdwwE.jpg",
+                        "http://i.imgur.com/SeoGrkR.jpg",
+                        "http://i.imgur.com/7mzuxxX.jpg",
+                        "http://i.imgur.com/U48UeGr.jpg"
+                    ]
+          },
+          {
+            "title": "Kitchen poster - 2014",
+            "cover": "http://i.imgur.com/m5iDra0.jpg",
+            "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
+            "store": "https://www.etsy.com/uk/listing/251633041/a2-poster-measurement-conversion-for-the?ref=kingadesign",
+            "images": [
+                        "http://i.imgur.com/m5iDra0.jpg",
+                        "http://i.imgur.com/33qDJJ5.jpg"
+                    ]
+          },
+          {
+            "title": "Booze Octopus – 2014",
+            "cover": "http://i.imgur.com/AwI6r5M.jpg",
+            "text": "A quick model of an octopus dressed up as a ghost saying “Boooozzze”.",
+            "images": [
+                        "http://i.imgur.com/AwI6r5M.jpg"
+                    ]
+          },
+          {
+            "title": "Wooden spoons – 2014",
+            "cover": "http://i.imgur.com/0q0Vwmy.jpg",
+            "text": "Carved spoons for an assignment at Brighton university.",
+            "images": [
+                        "http://i.imgur.com/0q0Vwmy.jpg",
+                        "http://i.imgur.com/IDXN7Ak.jpg"
+                    ]
+          },
+          {
+            "title": "Alternative Time – 2011",
+            "cover": "http://i.imgur.com/QZFOADv.jpg",
+            "text": "A clock that shows time with an LED light that travels around. It will never tell you the exact time. Stress is a big problem in today’s society and I think one of the reasons is that everyone expects everything go much quicker than it actually does, so if we have a clock that shows us only full and half hours maybe people would slow down and enjoy life.",
+            "images": [
+                        "http://i.imgur.com/QZFOADv.jpg",
+                        "http://i.imgur.com/9mXwchY.jpg"
+                    ]
+          },
+          {
+            "title": "Fruit Lamp Stand – 2011",
+            "cover": "http://i.imgur.com/VH2XbpW.jpg",
+            "text": "For an exhibition during my studies at Nyckelviksskolan – wood we had an assignment to make a fruit collage that was a lamp stand, the same height as ourselves. This is my interpretation of what that could look like. We had a very limited time to work with this project. The materials are styrofoam wood and plywood. The fruits represented are, red pear, orange, zebra lemon and fruit of the sea fish scale. The lamp stand is 171 cm.",
+            "images": [
+                        "http://i.imgur.com/VH2XbpW.jpg",
+                        "http://i.imgur.com/ADA7NcW.jpg"
                     ]
           }
 

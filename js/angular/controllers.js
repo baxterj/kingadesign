@@ -99,7 +99,7 @@ myApp.controller("HomeController", function($scope, $http) {
 
 });
 
-myApp.controller("HeaderController", function($scope, $http) {
+myApp.controller("FooterController", function($scope, $http) {
 
     $http({
         method: 'GET',
