@@ -129,9 +129,13 @@ body .modal-content {
     border-radius: 0px;
 }
 
+body .modal-body {
+    padding-top: 0px;
+}
+
 @media screen and (min-width: 768px) {
     body .view-modal {
-        width: 80%; /* either % (e.g. 60%) or px (400px) */
+        width: 70%;
     }
 }
 
