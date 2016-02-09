@@ -95,6 +95,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding-right: 0px !important;
+}
+
+body.modal-open {
+    overflow-y: auto !important;
+}
+
 body .container {
     text-align: center;
 }
