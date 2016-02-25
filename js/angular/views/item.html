@@ -1,0 +1,30 @@
+<div ng-controller="ItemController">
+  <div class="item-dialog view-item">
+
+    <div class="item-content">
+        <a class="close close-button" href="/#home"><span class="fa fa-chevron-left"></span></a>
+      <div class="item-header">
+        <h2 ng-bind-html="itemHolder.data[itemId].title"></h2>
+      </div>
+      <div class="item-body row">
+        <div class="col-xs-12 margin-top-10" ng-repeat="image in itemHolder.data[itemId].images">
+          <a href="#" ng-href="{{image}}" target="_blank"><img ng-src="{{image}}" /></a>
+        </div>
+
+        <div class="col-xs-12 margin-top-10 item-videos" ng-if="itemHolder.data[itemId].videos" ng-repeat="video in itemHolder.data[itemId].videos">
+          <iframe ng-src="{{sce.trustAsResourceUrl(video)}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-12 margin-top-10">
+          <div class="item-text" ng-bind-html="itemHolder.data[itemId].text"></div>
+        </div>
+
+        <div ng-if="itemHolder.data[itemId].store" class="col-xs-12 margin-top-10">
+          <a href="#" ng-href="{{itemHolder.data[itemId].store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

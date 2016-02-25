@@ -99,52 +99,42 @@ body {
     padding-right: 0px !important;
 }
 
-body.modal-open {
-    overflow-y: auto !important;
-}
-
 body .container {
     text-align: center;
 }
 
-body .modal-header {
+body .item-header {
     border-bottom: none;
 }
 
-body .view-modal {
+body .view-item {
     text-align: center;
 }
 
-body .view-modal img {
+body .view-item img {
     max-width: 400px;
     width: 100%;
 }
 
-body .modal-videos {
+body .item-videos {
     width: 100%;
 }
 
-body .modal-videos iframe {
+body .item-videos iframe {
     height: 300px;
 }
 
-body .view-modal .modal-text {
+body .view-item .item-text {
     max-width: 600px;
     margin: 0 auto;
 }
 
-body .modal-content {
+body .item-content {
     border-radius: 0px;
 }
 
-body .modal-body {
+body .item-body {
     padding-top: 0px;
-}
-
-@media screen and (min-width: 768px) {
-    body .view-modal {
-        width: 70%;
-    }
 }
 
 #owl-example .carousel-item img {
@@ -180,44 +170,6 @@ body .modal-body {
 
 #owl-example .owl-stage-outer {
   padding-bottom: 0;
-}
-
-.nextPrevious {
-    display: none;
-    z-index: 9999999;
-    position: fixed;
-    top: 50%;
-    font-size: 40px;
-    color: #CCC;
-    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
-}
-
-.nextPrevious :active, .nextPrevious :hover {
-    color: #FFF;
-}
-
-.nextPrevious.next {
-    right: 10%;
-}
-
-.nextPrevious.previous {
-    left: 10%;
-}
-
-@media screen and (max-width: 480px) {
-    .nextPrevious {
-        color: #666;
-    }
-    .nextPrevious.next {
-        right: 2%;
-    }
-
-    .nextPrevious.previous {
-        left: 2%;
-    }
-    .nextPrevious :active, .nextPrevious :hover {
-        color: #666;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -301,11 +253,30 @@ body a:hover, body a:active {
     text-decoration: none;
 }
 
+.links {
+    padding-bottom: 20px;
+}
+
 .links a {
     display: inline-block;
     min-width: 75px;
     font-size: 18px;
     text-align: center;
+}
+
+.item-header h2 {
+    display: inline-block;
+}
+
+.item-content {
+    position: relative;
+}
+
+.item-content .close {
+    float: none;
+    display: block;
+    position: absolute;
+    top:-20px;
 }
 
 /* ==========================================================================

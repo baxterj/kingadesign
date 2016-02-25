@@ -1,16 +1,29 @@
-myApp.controller("HomeController", function($scope, $http) {
-
-    $scope.selectedId = 0;
-
+myApp.controller("AppController", function($scope, $stateParams, $http) {
     $http({
         method: 'GET',
         url: 'data/data.json'
     }).then(function successCallback(response) {
         $scope.data = response.data.items;
-        $scope.initializeCarousel();
     }, function errorCallback(response) {
         // |_|
     });
+    
+});
+
+myApp.controller("HomeController", function($scope, $http, $state, $stateParams, $window) {
+
+    $scope.selectedItem = $window.localStorage.getItem("carouselItem");
+    if (!$scope.selectedItem) {
+        $scope.selectedItem = 0;
+    }
+    
+
+    $scope.$watch('data', function(data) {
+        if ($scope.data) {
+            $scope.initializeCarousel();
+        }
+    });
+    
 
     $scope.initializeCarousel = function() {
         var html = "";
@@ -22,21 +35,20 @@ myApp.controller("HomeController", function($scope, $http) {
 
         $(".owl-carousel").html(html);
 
+
         $(".owl-carousel").owlCarousel({
             autoWidth: true,
             margin: 10,
             center: true,
             loop: true,
-            // items: 1
+            startPosition: $scope.selectedItem
         });
         $scope.owlHome = $(".owl-carousel");
         $scope.owl = $(".owl-carousel").data('owlCarousel');
 
         $('.owl-carousel').on('click', '.owl-item', function(e) {
-            $scope.selectedId = $(this).find('.carousel-item').data('id');
-            $scope.$apply(function() {
-                $scope.updateModalContent();
-            }); 
+            this.selectedId = $(this).find('.carousel-item').data('id');
+            $state.go('item', {itemId: this.selectedId});
         });
 
         $(document.documentElement).keydown(function(e) {
@@ -59,47 +71,24 @@ myApp.controller("HomeController", function($scope, $http) {
         // });
     };
 
-    $scope.updateModalContent = function() {
-        $scope.selectedData = $scope.data[$scope.selectedId];
-        $scope.showNextPrevious(true);
-        $("#contentModal").modal(true);
-    };
-
-    $(document).on('hidden.bs.modal', '#contentModal', function(){
-        $scope.showNextPrevious(false);
-    });
-
-    $scope.showNextPrevious = function(doShow) {
-        if (doShow === true) {
-            $('.nextPrevious').fadeIn(300);
-        } else {
-            $('.nextPrevious').fadeOut(0);
-        }
-    };
-
-    $scope.doNext = function() {
-        if ($scope.selectedId < $scope.data.length - 1) {
-            $scope.selectedId++;
-        } else {
-            $scope.selectedId = 0;
-        }
-        
-        $scope.updateModalContent();
-    };
-
-    $scope.doPrevious = function() {
-        if ($scope.selectedId > 0) {
-            $scope.selectedId--;
-        } else {
-            $scope.selectedId = $scope.data.length - 1;
-        }
-        
-        $scope.updateModalContent();
-    };
-
 });
 
-myApp.controller("FooterController", function($scope, $http) {
+
+myApp.controller("ItemController", function($scope, $stateParams, $sce, $window) {
+    $scope.sce = $sce;
+    $scope.itemId = $stateParams.itemId;
+
+    $window.localStorage.setItem("carouselItem", $scope.itemId);
+
+    $scope.itemHolder = {data: {}};
+    $scope.$watch('data', function(data) {
+        if (data) {
+            $scope.itemHolder.data = data;
+        }
+    });
+});
+
+myApp.controller("AboutController", function($scope, $http) {
 
     $http({
         method: 'GET',
@@ -109,9 +98,4 @@ myApp.controller("FooterController", function($scope, $http) {
     }, function errorCallback(response) {
         // |_|
     });
-
-    $scope.displayInfo = function() {
-        $("#infoModal").modal(true);
-    }
-
 });
