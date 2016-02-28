@@ -1,13 +1,14 @@
 myApp.controller("AppController", function($scope, $stateParams, $http, $rootScope, $window) {
+        
     $http({
         method: 'GET',
-        url: 'data/data.json'
+        url: 'data/data.json',
+        responseType: 'json'
     }).then(function successCallback(response) {
         $scope.data = response.data.items;
     }, function errorCallback(response) {
         // |_|
     });
-    
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
         var pageUrl = toState.url
@@ -18,21 +19,19 @@ myApp.controller("AppController", function($scope, $stateParams, $http, $rootSco
     });
 });
 
-myApp.controller("HomeController", function($scope, $http, $state, $stateParams, $window) {
+myApp.controller("HomeController", function($scope, $http, $state, $stateParams, $window, $cookies) {
 
-    $scope.selectedItem = $window.localStorage.getItem("carouselItem");
+    $scope.selectedItem = $cookies.get("carouselItem");
     if (!$scope.selectedItem) {
         $scope.selectedItem = 0;
     }
     
-
     $scope.$watch('data', function(data) {
         if ($scope.data) {
             $scope.initializeCarousel();
         }
     });
     
-
     $scope.initializeCarousel = function() {
         var html = "";
         angular.forEach($scope.data, function(value, key) {
@@ -83,13 +82,14 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
 });
 
 
-myApp.controller("ItemController", function($scope, $stateParams, $sce, $window) {
+myApp.controller("ItemController", function($scope, $stateParams, $sce, $window, $cookies) {
     $scope.sce = $sce;
     $scope.itemId = $stateParams.itemId;
 
-    $window.localStorage.setItem("carouselItem", $scope.itemId);
+    $cookies.put("carouselItem", $scope.itemId);
 
     $scope.itemHolder = {data: {}};
+
     $scope.$watch('data', function(data) {
         if (data) {
             $scope.itemHolder.data = data;

@@ -269,10 +269,6 @@ body a:hover, body a:active {
     margin-right: 10px;
 }
 
-.item-content {
-    position: relative;
-}
-
 .item-content .close-full {
     float: left;
     display: inline-block;

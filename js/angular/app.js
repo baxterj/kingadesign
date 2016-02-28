@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router', 'ngSanitize']);
+var myApp = angular.module('myApp', ['ui.router', 'ngSanitize', 'ngCookies']);
 
 
 myApp.config(function($stateProvider, $urlRouterProvider, $urlMatcherFactoryProvider) {
@@ -22,9 +22,5 @@ myApp.config(function($stateProvider, $urlRouterProvider, $urlMatcherFactoryProv
         url: "/about",
         templateUrl: "js/angular/views/about.html"
     })
-
-
-      
-    
 });
 
