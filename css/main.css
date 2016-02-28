@@ -266,17 +266,56 @@ body a:hover, body a:active {
 
 .item-header h2 {
     display: inline-block;
+    margin-right: 10px;
 }
 
 .item-content {
     position: relative;
 }
 
-.item-content .close {
-    float: none;
+.item-content .close-full {
+    float: left;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.close-responsive {
+    display: none;
+}
+
+.close-footer-holder {
+    max-width: 400px;
+    height: 2px;
+    margin: 0 auto;
+}
+
+.item-content .close-footer {
     display: block;
-    position: absolute;
-    top:-20px;
+    float: left;
+}
+
+
+@media screen and (max-width: 480px) {
+    .item-content .close-responsive {
+        float: none;
+        display: block;
+        position: absolute;
+        top:-20px;
+    }
+
+    .item-content .close-footer {
+        float: left;
+        margin-left: 15px;
+    }
+
+    .item-content .close-full {
+        display: none;
+    }
+}
+
+.home-container {
+    margin-top: 20px;
 }
 
 /* ==========================================================================

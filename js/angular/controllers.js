@@ -1,4 +1,4 @@
-myApp.controller("AppController", function($scope, $stateParams, $http) {
+myApp.controller("AppController", function($scope, $stateParams, $http, $rootScope, $window) {
     $http({
         method: 'GET',
         url: 'data/data.json'
@@ -8,6 +8,14 @@ myApp.controller("AppController", function($scope, $stateParams, $http) {
         // |_|
     });
     
+
+    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+        var pageUrl = toState.url
+        if (toState.name === 'item') {
+            pageUrl = pageUrl.replace(':itemId', toParams.itemId)
+        }
+        $window.ga('send', 'pageview', pageUrl);
+    });
 });
 
 myApp.controller("HomeController", function($scope, $http, $state, $stateParams, $window) {
@@ -48,6 +56,7 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
 
         $('.owl-carousel').on('click', '.owl-item', function(e) {
             this.selectedId = $(this).find('.carousel-item').data('id');
+            $window.ga('send', 'event', 'Carousel', 'click', $scope.data[this.selectedId].title);
             $state.go('item', {itemId: this.selectedId});
         });
 
