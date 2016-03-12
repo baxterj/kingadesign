@@ -35,9 +35,12 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
     $scope.initializeCarousel = function() {
         var html = "";
         angular.forEach($scope.data, function(value, key) {
-            html += '<div class="carousel-item portrait" style="width:auto;" data-id="' + key + '">\n'
-                + '<img src="' + value.cover + '" />\n'
-                + '</div>\n';
+            if (value.carousel) {
+                html += '<div class="carousel-item portrait" style="width:auto;" data-id="' + key + '">\n'
+                    + '<img src="' + value.cover + '" />\n'
+                    + '</div>\n';
+            }
+           
         })
 
         $(".owl-carousel").html(html);
@@ -107,4 +110,40 @@ myApp.controller("AboutController", function($scope, $http) {
     }, function errorCallback(response) {
         // |_|
     });
+});
+
+myApp.controller("ArchiveController", function($scope, $window, $state) {
+    $scope.$watch('data', function(data) {
+        if ($scope.data) {
+            $scope.initializeMasonry();
+        }
+    });
+    
+    $scope.initializeMasonry = function() {
+        var html = "";
+        angular.forEach($scope.data, function(value, key) {
+            html += '<div class="masonry-item" data-id="' + key + '">\n'
+                + '<img src="' + value.cover + '" />\n'
+                + '</div>\n';
+           
+        })
+        $('.masonry-container').html(html);
+
+        var $grid = $('.masonry-container').imagesLoaded( function() {
+            // init Masonry after all images have loaded
+            $grid.masonry({
+                columnWidth: 200,
+                gutter: 10,
+                fitWidth: true,
+                itemSelector: '.masonry-item'
+            });
+        });
+    };
+
+    $('.masonry-container').on('click', '.masonry-item', function(e) {
+        this.selectedId = $(this).data('id');
+        $window.ga('send', 'event', 'Archive', 'click', $scope.data[this.selectedId].title);
+        $state.go('item', {itemId: this.selectedId});
+    });
+
 });

@@ -2,32 +2,36 @@
 
     <div class="item-dialog view-item">
 
-        <div class="item-content">
-          <div class="item-header">
-            <button type="button" class="close">&times;</button>
-            <h2 ng-bind-html="infoData.title"></h2>
-          </div>
-          <div class="item-body row">
-            <div class="col-xs-12 margin-top-10" ng-repeat="image in infoData.images">
-              <img ng-src="{{image}}" />
-            </div>
-
-            <div class="col-xs-12 margin-top-10 item-videos" ng-if="infoData.videos" ng-repeat="video in infoData.videos">
-              <iframe ng-src="{{sce.trustAsResourceUrl(video)}}" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-xs-12 margin-top-10">
-              <div class="item-text" ng-bind-html="infoData.text"></div>
-            </div>
-
-            <div ng-if="infoData.store" class="col-xs-12 margin-top-10">
-              <a href="#" ng-href="{{infoData.store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
-            </div>
-
-          </div>
+    <div class="item-content">
+      <a class="close close-button close-responsive" href="/#home"><span class="fa fa-chevron-left"></span></a>
+      <!-- <div class="item-header">
+        <h2><a class="close close-button close-full" href="/#home"><span class="fa fa-chevron-left"></span></a><span ng-bind-html="infoData.title"></span></h2>
+      </div> -->
+      <div class="item-body row">
+        <div class="col-xs-12 margin-top-10" ng-repeat="image in infoData.images">
+          <img ng-src="{{image}}" />
         </div>
 
-     </div>
+        <div class="col-xs-12 margin-top-10 item-videos" ng-if="infoData.videos" ng-repeat="video in infoData.videos">
+          <iframe ng-src="{{sce.trustAsResourceUrl(video)}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-12 margin-top-10">
+          <div class="item-text" ng-bind-html="infoData.text"></div>
+        </div>
+
+        <div ng-if="infoData.store" class="col-xs-12 margin-top-10">
+          <a href="#" ng-href="{{infoData.store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
+        </div>
+
+        <div class="close-footer-holder clearfix">
+          <a class="close close-button close-footer" href="/#home"><span class="fa fa-chevron-left"></span></a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
     
 
 </div>

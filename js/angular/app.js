@@ -22,5 +22,10 @@ myApp.config(function($stateProvider, $urlRouterProvider, $urlMatcherFactoryProv
         url: "/about",
         templateUrl: "js/angular/views/about.html"
     })
+
+    .state('archive', {
+        url: "/archive",
+        templateUrl: "js/angular/views/archive.html"
+    })
 });
 

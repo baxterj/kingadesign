@@ -14,6 +14,7 @@
             "title": "My first stool - 2010",
             "cover": "http://i.imgur.com/OtVETlm.jpg",
             "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/OtVETlm.jpg",
                         "http://i.imgur.com/S6xgZsP.jpg"
@@ -41,6 +42,7 @@
             "cover": "http://i.imgur.com/m5iDra0.jpg",
             "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
             "store": "https://www.etsy.com/uk/listing/251633041/a2-poster-measurement-conversion-for-the?ref=kingadesign",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/m5iDra0.jpg",
                         "http://i.imgur.com/33qDJJ5.jpg"
@@ -61,6 +63,7 @@
             "title": "Wooden spoons – 2014",
             "cover": "http://i.imgur.com/0q0Vwmy.jpg",
             "text": "Carved spoons for an assignment at Brighton university.",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/0q0Vwmy.jpg",
                         "http://i.imgur.com/IDXN7Ak.jpg"
@@ -69,6 +72,7 @@
           {
             "title": "Girl Illustration - 2015",
             "cover": "http://i.imgur.com/6x4w4Pg.jpg",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/6x4w4Pg.jpg",
                         "http://i.imgur.com/jTNSgZf.jpg",
@@ -79,6 +83,7 @@
             "title": "Ceramic bowl - 2015",
             "cover": "http://i.imgur.com/AWoizXb.jpg",
             "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=kingadesign",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/AWoizXb.jpg",
                         "http://i.imgur.com/NpUytA5.jpg",
@@ -90,6 +95,7 @@
             "title": "Läpp candle holder - 2015",
             "cover": "http://i.imgur.com/oxKdwwE.jpg",
             "store": "https://www.etsy.com/uk/listing/251780563/lapp-candle-holder-lips-erotic-fun?ref=kingadesign",
+            "carousel": true,
             "images": [
                         "http://i.imgur.com/oxKdwwE.jpg",
                         "http://i.imgur.com/SeoGrkR.jpg",
