@@ -224,11 +224,7 @@ footer {
     font-size: 16px;
 }
 
-footer a {
-    display: inline-block;
-    width: 50px;
-    text-align: center;
-}
+
 
 header {
     margin-top: 20px;
@@ -264,6 +260,13 @@ body a:hover, body a:active, body a:hover, body a:focus {
     text-align: center;
     
 }
+
+
+
+footer.links a {
+    min-width: 40px;
+}
+
 
 .header-links.links a {
     color: #999;
