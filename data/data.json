@@ -62,7 +62,7 @@
           {
             "title": "Wooden spoons – 2014",
             "cover": "http://i.imgur.com/0q0Vwmy.jpg",
-            "text": "Carved spoons for an assignment at Brighton university.",
+            "text": "Carved spoons for an assignment at Brighton university",
             "carousel": true,
             "images": [
                         "http://i.imgur.com/0q0Vwmy.jpg",
@@ -97,11 +97,22 @@
             "store": "https://www.etsy.com/uk/listing/251780563/lapp-candle-holder-lips-erotic-fun?ref=kingadesign",
             "carousel": true,
             "images": [
-                        "http://i.imgur.com/oxKdwwE.jpg",
-                        "http://i.imgur.com/SeoGrkR.jpg",
-                        "http://i.imgur.com/7mzuxxX.jpg",
-                        "http://i.imgur.com/U48UeGr.jpg"
-                    ]
+              "http://i.imgur.com/oxKdwwE.jpg",
+              "http://i.imgur.com/SeoGrkR.jpg",
+              "http://i.imgur.com/7mzuxxX.jpg",
+              "http://i.imgur.com/U48UeGr.jpg"
+            ]
+          },
+          {
+            "title": "Tumbleweed – 2016",
+            "text": "Simple and elegant lampshade created for the naked bulb.",
+                "cover": "http://i.imgur.com/VgCSoc0.jpg",
+                "carousel": true,
+                "images": [
+                            "http://i.imgur.com/luHDzgX.jpg",
+                            "http://i.imgur.com/7VgkIW4.jpg",
+                            "http://i.imgur.com/VgCSoc0.jpg"
+                        ]
           }
 
     ]

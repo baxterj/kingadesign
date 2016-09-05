@@ -137,6 +137,10 @@ body .item-body {
     padding-top: 0px;
 }
 
+.banner-img {
+    max-height: 220px;
+}
+
 #owl-example .carousel-item img {
     display: block;
     height: auto;
@@ -171,6 +175,22 @@ body .item-body {
 #owl-example .owl-stage-outer {
   padding-bottom: 0;
 }
+
+/* Fading on carousel images. Not sure how to get them to fade out again so disabled... */
+/*@keyframes fadeIn {
+    from {opacity: 0.65;}
+    to {opacity: 1;}
+}
+#owl-example .owl-item.center {
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+#owl-example .owl-item:not(.center) {
+    opacity: 0.65;
+}*/
+
 
 @media screen and (max-width: 768px) {
     #owl-example .carousel-item {
@@ -221,7 +241,7 @@ body .container {
 
 footer {
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
@@ -256,25 +276,22 @@ body a:hover, body a:active, body a:hover, body a:focus {
 .links a {
     display: inline-block;
     min-width: 75px;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     
 }
 
-
-
 footer.links a {
     min-width: 40px;
+    outline: 0;
 }
 
 
 .header-links.links a {
-    color: #999;
+    color: #333;
+    outline: 0;
 }
 
-.links a.header-selected {
-    color: #333;
-}
 
 .item-header h2 {
     display: inline-block;

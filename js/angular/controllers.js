@@ -25,10 +25,14 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
     if (!$scope.selectedItem) {
         $scope.selectedItem = 0;
     }
+    console.log('init at ' + $scope.selectedItem)
     
     $scope.$watch('data', function(data) {
         if ($scope.data) {
-            $scope.initializeCarousel();
+            setTimeout(function() {
+                 $scope.initializeCarousel();
+             }, 10)
+           
         }
     });
     
@@ -46,15 +50,21 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
         $(".owl-carousel").html(html);
 
 
+        console.log('set at ' + $scope.selectedItem)
+
         $(".owl-carousel").owlCarousel({
             autoWidth: true,
             margin: 10,
             center: true,
-            loop: true,
-            startPosition: $scope.selectedItem
+            loop: true
         });
+
+
+
         $scope.owlHome = $(".owl-carousel");
         $scope.owl = $(".owl-carousel").data('owlCarousel');
+
+        $scope.owlHome.trigger('owl.jumpTo', $scope.selectedItem)// TODO doesn't work... indexing in carousel different to indexing by id?
 
         $('.owl-carousel').on('click', '.owl-item', function(e) {
             this.selectedId = $(this).find('.carousel-item').data('id');
@@ -69,6 +79,12 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
                 $scope.owlHome.trigger('next.owl');
             }
         });
+
+        // $scope.owlHome.on('changed.owl.carousel', function(event) {
+        //     // console.log(event);
+        // })
+
+
 
         // $('.owl-carousel').on('mousewheel', '.owl-item', function(e) {
         //     if ($(window).width() > 768) {
