@@ -2,10 +2,10 @@
   <div class="item-dialog view-item">
 
     <div class="item-content">
-      <a class="close close-button close-responsive" href="/#home"><span class="fa fa-chevron-left"></span></a>
+      <!-- <a class="close close-button close-responsive" href="/#home"><span class="fa fa-chevron-left"></span></a>
       <div class="item-header">
         <h2><a class="close close-button close-full" href="/#home"><span class="fa fa-chevron-left"></span></a><span ng-bind-html="itemHolder.data[itemId].title"></span></h2>
-      </div>
+      </div> -->
       <div class="item-body row">
         <div class="col-xs-12 margin-top-10" ng-repeat="image in itemHolder.data[itemId].images">
           <img ng-src="{{image}}" />
@@ -13,6 +13,10 @@
 
         <div class="col-xs-12 margin-top-10 item-videos" ng-if="itemHolder.data[itemId].videos" ng-repeat="video in itemHolder.data[itemId].videos">
           <iframe ng-src="{{sce.trustAsResourceUrl(video)}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-xs-12 margin-top-10">
+          <h2><span ng-bind-html="itemHolder.data[itemId].title"></span></h2>
         </div>
 
         <div class="col-xs-12 margin-top-10">
