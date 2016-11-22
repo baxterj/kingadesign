@@ -2,7 +2,7 @@ myApp.controller("AppController", function($scope, $stateParams, $http, $rootSco
         
     $http({
         method: 'GET',
-        url: 'data/data.json',
+        url: 'data/data.json?bust='+new Date().getTime(),
         responseType: 'json'
     }).then(function successCallback(response) {
         $scope.data = response.data.items;
