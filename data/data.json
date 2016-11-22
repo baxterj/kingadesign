@@ -1,6 +1,7 @@
 {
     "items": [
           {
+            "itemId": "coffee-table",
             "title": "Slim coffee table – 2016",
             "text": "A fresh take on coffee table design with minimum usage of wood, but with maximum strength. It holds up the weight of two people.",
                 "cover": "http://i.imgur.com/ExR4XSt.png",
@@ -13,6 +14,7 @@
                         ]
           },
           {
+            "itemId": "tumbleweed",
             "title": "Tumbleweed – 2016",
             "text": "Simple and elegant lampshade created for the naked bulb.",
                 "cover": "http://i.imgur.com/VgCSoc0.jpg",
@@ -24,6 +26,7 @@
                         ]
           },
           {
+            "itemId": "lapp",
             "title": "Läpp candle holder - 2015",
             "cover": "http://i.imgur.com/oxKdwwE.jpg",
             "store": "https://www.etsy.com/uk/listing/251780563/lapp-candle-holder-lips-erotic-fun?ref=kingadesign",
@@ -36,6 +39,7 @@
             ]
           },
           {
+            "itemId": "ceramic-bowl",
             "title": "Ceramic bowl - 2015",
             "cover": "http://i.imgur.com/AWoizXb.jpg",
             "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=kingadesign",
@@ -48,6 +52,7 @@
                     ]
           },
           {
+            "itemId": "girl-illustration",
             "title": "Girl Illustration - 2015",
             "cover": "http://i.imgur.com/6x4w4Pg.jpg",
             "carousel": true,
@@ -58,6 +63,7 @@
                     ]
           },
           {
+            "itemId": "spoons",
             "title": "Wooden spoons – 2014",
             "cover": "http://i.imgur.com/0q0Vwmy.jpg",
             "text": "Carved spoons for an assignment at Brighton university",
@@ -68,6 +74,7 @@
                     ]
           },
           {
+            "itemId": "octopus",
             "title": "Booze Octopus – 2014",
             "cover": "http://i.imgur.com/AwI6r5M.jpg",
             "text": "A quick model of an octopus dressed up as a ghost saying “Boooozzze”.",
@@ -79,6 +86,7 @@
                     ]
           },
           {
+            "itemId": "kitchen-poster",
             "title": "Kitchen poster - 2014",
             "cover": "http://i.imgur.com/m5iDra0.jpg",
             "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
@@ -89,6 +97,7 @@
                     ]
           },
           {
+            "itemId": "fang-necklace",
             "title": "Fang necklace – 2012",
             "cover": "http://i.imgur.com/25TJMcf.jpg",
             "text": "Ceramic fang necklaces with one fang in a holographic coating.",
@@ -97,6 +106,7 @@
                     ]
           },
           {
+            "itemId": "time",
             "title": "Alternative Time – 2011",
             "cover": "http://i.imgur.com/QZFOADv.jpg",
             "text": "A clock that shows time with an LED light that travels around. It will never tell you the exact time. Stress is a big problem in today’s society and I think one of the reasons is that everyone expects everything go much quicker than it actually does, so if we have a clock that shows us only full and half hours maybe people would slow down and enjoy life.",
@@ -106,6 +116,7 @@
                     ]
           },
           {
+            "itemId": "stool",
             "title": "My first stool - 2010",
             "cover": "http://i.imgur.com/OtVETlm.jpg",
             "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
@@ -116,6 +127,7 @@
                     ]
           },
           {
+            "itemId": "bike-photo",
             "title": "Bike photo series – 2009",
             "cover": "http://i.imgur.com/EfZ8i1N.jpg",
             "text": "Analog photography and self developed",

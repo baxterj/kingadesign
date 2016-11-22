@@ -17,6 +17,16 @@ myApp.controller("AppController", function($scope, $stateParams, $http, $rootSco
         }
         $window.ga('send', 'pageview', pageUrl);
     });
+
+    $scope.getForItemId = function(itemId, data) {
+        var found = {};
+        angular.forEach($scope.data, function(value, key) {
+            if (value.itemId === itemId) {
+                found = value;
+            }
+        });
+        return found;
+    }
 });
 
 myApp.controller("HomeController", function($scope, $http, $state, $stateParams, $window, $cookies) {
@@ -25,7 +35,7 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
     if (!$scope.selectedItem) {
         $scope.selectedItem = 0;
     }
-    console.log('init at ' + $scope.selectedItem)
+    // console.log('init at ' + $scope.selectedItem)
     
     $scope.$watch('data', function(data) {
         if ($scope.data) {
@@ -40,7 +50,7 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
         var html = "";
         angular.forEach($scope.data, function(value, key) {
             if (value.carousel) {
-                html += '<div class="carousel-item portrait" style="width:auto;" data-id="' + key + '">\n'
+                html += '<div class="carousel-item portrait" style="width:auto;" data-id="' + value.itemId + '">\n'
                     + '<img src="' + value.cover + '" />\n'
                     + '</div>\n';
             }
@@ -50,7 +60,7 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
         $(".owl-carousel").html(html);
 
 
-        console.log('set at ' + $scope.selectedItem)
+        // console.log('set at ' + $scope.selectedItem)
 
         $(".owl-carousel").owlCarousel({
             autoWidth: true,
@@ -64,11 +74,11 @@ myApp.controller("HomeController", function($scope, $http, $state, $stateParams,
         $scope.owlHome = $(".owl-carousel");
         $scope.owl = $(".owl-carousel").data('owlCarousel');
 
-        $scope.owlHome.trigger('owl.jumpTo', $scope.selectedItem)// TODO doesn't work... indexing in carousel different to indexing by id?
+        // $scope.owlHome.trigger('owl.jumpTo', $scope.selectedItem)// TODO doesn't work... indexing in carousel different to indexing by id?
 
         $('.owl-carousel').on('click', '.owl-item', function(e) {
             this.selectedId = $(this).find('.carousel-item').data('id');
-            $window.ga('send', 'event', 'Carousel', 'click', $scope.data[this.selectedId].title);
+            $window.ga('send', 'event', 'Carousel', 'click', this.selectedId);
             $state.go('item', {itemId: this.selectedId});
         });
 
@@ -109,11 +119,16 @@ myApp.controller("ItemController", function($scope, $stateParams, $sce, $window,
 
     $scope.itemHolder = {data: {}};
 
+
+    
+
     $scope.$watch('data', function(data) {
         if (data) {
-            $scope.itemHolder.data = data;
+            $scope.itemHolder.item = $scope.getForItemId($scope.itemId, data);
         }
     });
+
+
 });
 
 myApp.controller("AboutController", function($scope, $http) {
@@ -138,7 +153,7 @@ myApp.controller("ArchiveController", function($scope, $window, $state) {
     $scope.initializeMasonry = function() {
         var html = "";
         angular.forEach($scope.data, function(value, key) {
-            html += '<div class="masonry-item" data-id="' + key + '">\n'
+            html += '<div class="masonry-item" data-id="' + value.itemId + '">\n'
                 + '<img src="' + value.cover + '" />\n'
                 + '</div>\n';
            
@@ -158,7 +173,7 @@ myApp.controller("ArchiveController", function($scope, $window, $state) {
 
     $('.masonry-container').on('click', '.masonry-item', function(e) {
         this.selectedId = $(this).data('id');
-        $window.ga('send', 'event', 'Archive', 'click', $scope.data[this.selectedId].title);
+        $window.ga('send', 'event', 'Archive', 'click', this.selectedId);
         $state.go('item', {itemId: this.selectedId});
     });
 

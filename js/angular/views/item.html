@@ -4,27 +4,27 @@
     <div class="item-content">
       <!-- <a class="close close-button close-responsive" href="/#home"><span class="fa fa-chevron-left"></span></a>
       <div class="item-header">
-        <h2><a class="close close-button close-full" href="/#home"><span class="fa fa-chevron-left"></span></a><span ng-bind-html="itemHolder.data[itemId].title"></span></h2>
+        <h2><a class="close close-button close-full" href="/#home"><span class="fa fa-chevron-left"></span></a><span ng-bind-html="itemHolder.item.title"></span></h2>
       </div> -->
       <div class="item-body row">
-        <div class="col-xs-12 margin-top-10" ng-repeat="image in itemHolder.data[itemId].images">
+        <div class="col-xs-12 margin-top-10" ng-repeat="image in itemHolder.item.images">
           <img ng-src="{{image}}" />
         </div>
 
-        <div class="col-xs-12 margin-top-10 item-videos" ng-if="itemHolder.data[itemId].videos" ng-repeat="video in itemHolder.data[itemId].videos">
+        <div class="col-xs-12 margin-top-10 item-videos" ng-if="itemHolder.item.videos" ng-repeat="video in itemHolder.item.videos">
           <iframe ng-src="{{sce.trustAsResourceUrl(video)}}" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="col-xs-12 margin-top-10">
-          <h2><span ng-bind-html="itemHolder.data[itemId].title"></span></h2>
+          <h2><span ng-bind-html="itemHolder.item.title"></span></h2>
         </div>
 
         <div class="col-xs-12 margin-top-10">
-          <div class="item-text" ng-bind-html="itemHolder.data[itemId].text"></div>
+          <div class="item-text" ng-bind-html="itemHolder.item.text"></div>
         </div>
 
-        <div ng-if="itemHolder.data[itemId].store" class="col-xs-12 margin-top-10">
-          <a href="#" ng-href="{{itemHolder.data[itemId].store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
+        <div ng-if="itemHolder.item.store" class="col-xs-12 margin-top-10">
+          <a href="#" ng-href="{{itemHolder.item.store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
         </div>
 
         <div class="close-footer-holder clearfix">
