@@ -1,95 +1,27 @@
 {
     "items": [
           {
-            "title": "Bike photo series – 2009",
-            "cover": "http://i.imgur.com/EfZ8i1N.jpg",
-            "text": "Analog photography and self developed",
-            "images": [
-                        "http://i.imgur.com/EfZ8i1N.jpg",
-                        "http://i.imgur.com/bpUCwbS.jpg",
-                        "http://i.imgur.com/1V5Zlry.jpg"
-                    ]
+            "title": "Slim coffee table – 2016",
+            "text": "A fresh take on coffee table design with minimum usage of wood, but with maximum strength. It holds up the weight of two people.",
+                "cover": "http://i.imgur.com/ExR4XSt.png",
+                "carousel": true,
+                "images": [
+                            "http://i.imgur.com/3IVHN1Y.png",
+                            "http://i.imgur.com/yFWpZhf.png",
+                            "http://i.imgur.com/LO9S4UA.png",
+                            "http://i.imgur.com/PtUO2E6.png"
+                        ]
           },
           {
-            "title": "My first stool - 2010",
-            "cover": "http://i.imgur.com/OtVETlm.jpg",
-            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
-            "carousel": true,
-            "images": [
-                        "http://i.imgur.com/OtVETlm.jpg",
-                        "http://i.imgur.com/S6xgZsP.jpg"
-                    ]
-          },
-          {
-            "title": "Alternative Time – 2011",
-            "cover": "http://i.imgur.com/QZFOADv.jpg",
-            "text": "A clock that shows time with an LED light that travels around. It will never tell you the exact time. Stress is a big problem in today’s society and I think one of the reasons is that everyone expects everything go much quicker than it actually does, so if we have a clock that shows us only full and half hours maybe people would slow down and enjoy life.",
-            "images": [
-                        "http://i.imgur.com/QZFOADv.jpg",
-                        "http://i.imgur.com/9mXwchY.jpg"
-                    ]
-          },
-          {
-            "title": "Fang necklace – 2012",
-            "cover": "http://i.imgur.com/25TJMcf.jpg",
-            "text": "Ceramic fang necklaces with one fang in a holographic coating.",
-            "images": [
-                        "http://i.imgur.com/25TJMcf.jpg"
-                    ]
-          },
-          {
-            "title": "Kitchen poster - 2014",
-            "cover": "http://i.imgur.com/m5iDra0.jpg",
-            "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
-            "store": "https://www.etsy.com/uk/listing/251633041/a2-poster-measurement-conversion-for-the?ref=kingadesign",
-            "carousel": true,
-            "images": [
-                        "http://i.imgur.com/m5iDra0.jpg",
-                        "http://i.imgur.com/33qDJJ5.jpg"
-                    ]
-          },
-          {
-            "title": "Booze Octopus – 2014",
-            "cover": "http://i.imgur.com/AwI6r5M.jpg",
-            "text": "A quick model of an octopus dressed up as a ghost saying “Boooozzze”.",
-            "images": [
-                        "http://i.imgur.com/AwI6r5M.jpg"
-                    ],
-            "videos": [
-                        "https://www.youtube.com/embed/cDEfw6gs2uY"
-                    ]
-          },
-          {
-            "title": "Wooden spoons – 2014",
-            "cover": "http://i.imgur.com/0q0Vwmy.jpg",
-            "text": "Carved spoons for an assignment at Brighton university",
-            "carousel": true,
-            "images": [
-                        "http://i.imgur.com/0q0Vwmy.jpg",
-                        "http://i.imgur.com/IDXN7Ak.jpg"
-                    ]
-          },
-          {
-            "title": "Girl Illustration - 2015",
-            "cover": "http://i.imgur.com/6x4w4Pg.jpg",
-            "carousel": true,
-            "images": [
-                        "http://i.imgur.com/6x4w4Pg.jpg",
-                        "http://i.imgur.com/jTNSgZf.jpg",
-                        "http://i.imgur.com/CMrdQOg.jpg"
-                    ]
-          },
-          {
-            "title": "Ceramic bowl - 2015",
-            "cover": "http://i.imgur.com/AWoizXb.jpg",
-            "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=kingadesign",
-            "carousel": true,
-            "images": [
-                        "http://i.imgur.com/AWoizXb.jpg",
-                        "http://i.imgur.com/NpUytA5.jpg",
-                        "http://i.imgur.com/Teuk7DS.jpg",
-                        "http://i.imgur.com/wwE7cWy.jpg"
-                    ]
+            "title": "Tumbleweed – 2016",
+            "text": "Simple and elegant lampshade created for the naked bulb.",
+                "cover": "http://i.imgur.com/VgCSoc0.jpg",
+                "carousel": true,
+                "images": [
+                            "http://i.imgur.com/luHDzgX.jpg",
+                            "http://i.imgur.com/7VgkIW4.jpg",
+                            "http://i.imgur.com/VgCSoc0.jpg"
+                        ]
           },
           {
             "title": "Läpp candle holder - 2015",
@@ -104,15 +36,94 @@
             ]
           },
           {
-            "title": "Tumbleweed – 2016",
-            "text": "Simple and elegant lampshade created for the naked bulb.",
-                "cover": "http://i.imgur.com/VgCSoc0.jpg",
-                "carousel": true,
-                "images": [
-                            "http://i.imgur.com/luHDzgX.jpg",
-                            "http://i.imgur.com/7VgkIW4.jpg",
-                            "http://i.imgur.com/VgCSoc0.jpg"
-                        ]
+            "title": "Ceramic bowl - 2015",
+            "cover": "http://i.imgur.com/AWoizXb.jpg",
+            "store": "https://www.etsy.com/uk/listing/251729036/hand-crafted-ceramic-bowl-modern?ref=kingadesign",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/AWoizXb.jpg",
+                        "http://i.imgur.com/NpUytA5.jpg",
+                        "http://i.imgur.com/Teuk7DS.jpg",
+                        "http://i.imgur.com/wwE7cWy.jpg"
+                    ]
+          },
+          {
+            "title": "Girl Illustration - 2015",
+            "cover": "http://i.imgur.com/6x4w4Pg.jpg",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/6x4w4Pg.jpg",
+                        "http://i.imgur.com/jTNSgZf.jpg",
+                        "http://i.imgur.com/CMrdQOg.jpg"
+                    ]
+          },
+          {
+            "title": "Wooden spoons – 2014",
+            "cover": "http://i.imgur.com/0q0Vwmy.jpg",
+            "text": "Carved spoons for an assignment at Brighton university",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/0q0Vwmy.jpg",
+                        "http://i.imgur.com/IDXN7Ak.jpg"
+                    ]
+          },
+          {
+            "title": "Booze Octopus – 2014",
+            "cover": "http://i.imgur.com/AwI6r5M.jpg",
+            "text": "A quick model of an octopus dressed up as a ghost saying “Boooozzze”.",
+            "images": [
+                        "http://i.imgur.com/AwI6r5M.jpg"
+                    ],
+            "videos": [
+                        "https://www.youtube.com/embed/cDEfw6gs2uY"
+                    ]
+          },
+          {
+            "title": "Kitchen poster - 2014",
+            "cover": "http://i.imgur.com/m5iDra0.jpg",
+            "text": "<p>When moving from Sweden to UK I had big troubles converting all the measurements in the kitchen, so I created a quick and easy way to visually see conversions instead of always looking it up on the internet.</p><p>The poster comes in 3 colors,  Dark green, black and red in the size A2.</p>",
+            "store": "https://www.etsy.com/uk/listing/251633041/a2-poster-measurement-conversion-for-the?ref=kingadesign",
+            "images": [
+                        "http://i.imgur.com/m5iDra0.jpg",
+                        "http://i.imgur.com/33qDJJ5.jpg"
+                    ]
+          },
+          {
+            "title": "Fang necklace – 2012",
+            "cover": "http://i.imgur.com/25TJMcf.jpg",
+            "text": "Ceramic fang necklaces with one fang in a holographic coating.",
+            "images": [
+                        "http://i.imgur.com/25TJMcf.jpg"
+                    ]
+          },
+          {
+            "title": "Alternative Time – 2011",
+            "cover": "http://i.imgur.com/QZFOADv.jpg",
+            "text": "A clock that shows time with an LED light that travels around. It will never tell you the exact time. Stress is a big problem in today’s society and I think one of the reasons is that everyone expects everything go much quicker than it actually does, so if we have a clock that shows us only full and half hours maybe people would slow down and enjoy life.",
+            "images": [
+                        "http://i.imgur.com/QZFOADv.jpg",
+                        "http://i.imgur.com/9mXwchY.jpg"
+                    ]
+          },
+          {
+            "title": "My first stool - 2010",
+            "cover": "http://i.imgur.com/OtVETlm.jpg",
+            "text": "<p>The first stool I made during my education at Nyckelviksskolan – Wood.</p><p>The stool is made in pine wood and painted with a thin coat of white and turquoise.</p><p>The inspiration for the stool comes from earthquakes - how the plate tectonics move to make horrible nature catastrophes for us humans.</p>",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/OtVETlm.jpg",
+                        "http://i.imgur.com/S6xgZsP.jpg"
+                    ]
+          },
+          {
+            "title": "Bike photo series – 2009",
+            "cover": "http://i.imgur.com/EfZ8i1N.jpg",
+            "text": "Analog photography and self developed",
+            "images": [
+                        "http://i.imgur.com/EfZ8i1N.jpg",
+                        "http://i.imgur.com/bpUCwbS.jpg",
+                        "http://i.imgur.com/1V5Zlry.jpg"
+                    ]
           }
 
     ]
