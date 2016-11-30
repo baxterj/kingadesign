@@ -4,26 +4,27 @@
             "itemId": "coffee-table",
             "title": "Slim coffee table – 2016",
             "text": "A fresh take on coffee table design with minimum usage of wood, but with maximum strength. It holds up the weight of two people.",
-                "cover": "http://i.imgur.com/ExR4XSt.png",
-                "carousel": true,
-                "images": [
-                            "http://i.imgur.com/tYJlElA.png",
-                            "http://i.imgur.com/jto3gsC.png",
-                            "http://i.imgur.com/3oPbKy7.png",
-                            "http://i.imgur.com/c3d00U6.png"
-                        ]
+            "store": "https://www.etsy.com/uk/listing/481930294/geometric-coffeetable?ref=kingadesign",
+            "cover": "http://i.imgur.com/ExR4XSt.png",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/tYJlElA.png",
+                        "http://i.imgur.com/jto3gsC.png",
+                        "http://i.imgur.com/3oPbKy7.png",
+                        "http://i.imgur.com/c3d00U6.png"
+                    ]
           },
           {
             "itemId": "tumbleweed",
             "title": "Tumbleweed – 2016",
             "text": "Simple and elegant lampshade created for the naked bulb.",
-                "cover": "http://i.imgur.com/VgCSoc0.jpg",
-                "carousel": true,
-                "images": [
-                            "http://i.imgur.com/luHDzgX.jpg",
-                            "http://i.imgur.com/7VgkIW4.jpg",
-                            "http://i.imgur.com/VgCSoc0.jpg"
-                        ]
+            "cover": "http://i.imgur.com/VgCSoc0.jpg",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/luHDzgX.jpg",
+                        "http://i.imgur.com/7VgkIW4.jpg",
+                        "http://i.imgur.com/VgCSoc0.jpg"
+                    ]
           },
           {
             "itemId": "lapp",
@@ -38,6 +39,33 @@
               "http://i.imgur.com/7mzuxxX.jpg",
               "http://i.imgur.com/U48UeGr.jpg"
             ]
+          },
+          {
+            "itemId": "brass-bowl",
+            "title": "Brass bowl – 2015",
+            "text": "Hand-formed brass bowl",
+            "cover": "http://i.imgur.com/rVcWguu.png",
+            "store": "https://www.etsy.com/uk/listing/482068310/small-hand-formed-brass-bowl?ref=kingadesign",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/HwFLvUS.png",
+                        "http://i.imgur.com/rVcWguu.png",
+                        "http://i.imgur.com/Ki7JQIv.png"
+                    ]
+          },
+          {
+            "itemId": "frosted-bowl",
+            "title": "Frosted bowl – 2015",
+            "text": "Sand blasted acrylic hand-made bowl, with a flat bottom. Nice frosted outside with a glossy inside",
+            "cover": "http://i.imgur.com/ykSInxC.png",
+            "store": "https://www.etsy.com/uk/listing/482063718/frosted-bowl?ref=kingadesign",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/xPwcHuU.png",
+                        "http://i.imgur.com/HQjlzcw.png",
+                        "http://i.imgur.com/ykSInxC.png",
+                        "http://i.imgur.com/awAUlFp.png"
+                    ]
           },
           {
             "itemId": "ceramic-bowl",
@@ -56,7 +84,6 @@
             "itemId": "girl-illustration",
             "title": "Girl Illustration - 2015",
             "cover": "http://i.imgur.com/6x4w4Pg.jpg",
-            "carousel": true,
             "images": [
                         "http://i.imgur.com/6x4w4Pg.jpg",
                         "http://i.imgur.com/jTNSgZf.jpg",
@@ -68,7 +95,6 @@
             "title": "Wooden spoons – 2014",
             "cover": "http://i.imgur.com/0q0Vwmy.jpg",
             "text": "Carved spoons for an assignment at Brighton university",
-            "carousel": true,
             "images": [
                         "http://i.imgur.com/0q0Vwmy.jpg",
                         "http://i.imgur.com/IDXN7Ak.jpg"
