@@ -124,6 +124,12 @@ body .view-item img {
         width: 100%;
         max-height:none;
     }
+
+    body .view-item iframe {
+        width: 100%;
+        max-height:300px;
+    }
+
 }
 
 body .item-videos {

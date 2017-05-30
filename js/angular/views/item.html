@@ -23,6 +23,14 @@
           <div class="item-text" ng-bind-html="itemHolder.item.text"></div>
         </div>
 
+        <div ng-if="iframeContent" class="col-xs-12 margin-top-10">
+          <div class="item-text">
+            <p>
+              <div ng-bind-html="iframeContent"></div>
+            </p>
+          </div>
+        </div>
+
         <div ng-if="itemHolder.item.store" class="col-xs-12 margin-top-10">
           <a href="#" ng-href="{{itemHolder.item.store}}" target="_blank">Available here <span class="fa fa-shopping-basket"></span></a>
         </div>

@@ -1,6 +1,24 @@
 {
     "items": [
           {
+            "itemId": "interplanetary",
+            "title": "Interplanetary living – 2017",
+            "text": "<p>When we arrive on Mars, we will be very limited in what we can produce. The futuristic visions commonly found in concept art are far from the reality of initial Martian settlement. Pioneers will have few resources available to them and they will spend a long time trapped in cramped conditions before achieving a space that they can truly call home.</p><p> By combining key materials brought from earth with raw materials refined from the Martian environment, we will be able to produce 3D printable compounds for creating useful objects. The use of these printers will allow custom items to be designed on Earth for specific purposes and sent to Mars for production. </p><p> This collection is a conceptual study of items we could produce through these means. The aim is to help the astronauts feel more at home by providing traditional earth like designs, that still possess futuristic and exciting qualities.</p>",
+            "cover": "http://i.imgur.com/9bS5uxg.jpg",
+            "iframe": "<iframe style=\"border: 1px solid #777;\" src=\"https://indd.adobe.com/embed/6f6ef8ff-f3d4-48aa-ba06-b586083ee61c?startpage=1&allowFullscreen=true\" width=\"500px\" height=\"400px\" frameborder=\"0\" allowfullscreen=\"\"></iframe>",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/2eqbYkf.jpg",
+                        "http://i.imgur.com/Beg2lhS.jpg",
+                        "http://i.imgur.com/UTdmMR9.jpg",
+                        "http://i.imgur.com/LkZ33jC.png",
+                        "http://i.imgur.com/0XByFIR.png",
+                        "http://i.imgur.com/0nwfvtY.jpg",
+                        "http://i.imgur.com/owQhKVO.jpg",
+                        "http://i.imgur.com/rqtMmwF.png"
+                    ]
+          },
+          {
             "itemId": "coffee-table",
             "title": "Slim coffee table – 2016",
             "text": "A fresh take on coffee table design with minimum usage of wood, but with maximum strength. It holds up the weight of two people.",

@@ -125,6 +125,7 @@ myApp.controller("ItemController", function($scope, $stateParams, $sce, $window,
     $scope.$watch('data', function(data) {
         if (data) {
             $scope.itemHolder.item = $scope.getForItemId($scope.itemId, data);
+            $scope.iframeContent = $sce.trustAsHtml($scope.itemHolder.item.iframe);
         }
     });
 
