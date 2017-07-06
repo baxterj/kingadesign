@@ -114,6 +114,10 @@ body .view-item {
     text-align: center;
 }
 
+body .view-item a {
+    font-style: italic;
+}
+
 body .view-item img {
     max-width: 500px;
     max-height: 500px;
@@ -143,6 +147,7 @@ body .item-videos iframe {
 body .view-item .item-text {
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 body .item-content {
@@ -343,6 +348,7 @@ footer.links a {
 .item-content .close-footer {
     display: block;
     float: left;
+    margin-top:10px;
 }
 
 
