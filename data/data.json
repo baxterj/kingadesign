@@ -19,6 +19,47 @@
                     ]
           },
           {
+            "itemId": "3d-rooms",
+            "title": "3D Modelling interiors for space - 2017",
+            "text": "<p>Concept interior models, produced using Fusion360. I made these for research during my <a href=\"http://kingadesign.com/#/view/interplanetary\">'Interplanetary Living'</a> project.</p><p>Each model is based on dimensions given by organizations such as SpaceX and Mars Society, or from real living scenarios such as rooms inhabited by staff at the Amundsen-Scott research facility near the South Pole.</p>",
+            "cover": "http://i.imgur.com/uYr3eIs.png",
+            "carousel": false,
+            "images": [
+                        "http://i.imgur.com/uYr3eIs.png",
+                        "http://i.imgur.com/IR5e3tB.png"
+                    ]
+          },
+          {
+            "itemId": "mars-vector",
+            "title": "Space themed vector art - 2017",
+            "text": "<p>Vector artwork for presentation of my <a href=\"http://kingadesign.com/#/view/interplanetary\">'Interplanetary Living'</a> project.",
+            "cover": "http://i.imgur.com/zqt3mOG.png",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/cmvzGuo.png",
+                        "http://i.imgur.com/fxiWKKM.png",
+                        "http://i.imgur.com/eqrMDFZ.jpg",
+                        "http://i.imgur.com/Bcs056L.png",
+                        "http://i.imgur.com/dgNaqp6.png",
+                        "http://i.imgur.com/XZ7Gptf.png"
+                    ]
+          },
+          {
+            "itemId": "3d-lamps",
+            "title": "3D Modelling light - 2017",
+            "text": "Concept lamp models, produced using Fusion360. I made the corner lamps into real objects as part of my <a href=\"http://kingadesign.com/#/view/interplanetary\">'Interplanetary Living'</a> project.",
+            "cover": "http://i.imgur.com/IeGjqph.png",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/yv0H9Cv.png",
+                        "http://i.imgur.com/AYPr3Ru.png",
+                        "http://i.imgur.com/fX4PE8t.png",
+                        "http://i.imgur.com/XOoc2Ob.png",
+                        "http://i.imgur.com/61dI4rH.png",
+                        "http://i.imgur.com/vZ8aGb8.png"
+                    ]
+          },
+          {
             "itemId": "coffee-table",
             "title": "Slim coffee table – 2016",
             "text": "A fresh take on coffee table design with minimum usage of wood, but with maximum strength. It holds up the weight of two people.",
@@ -69,6 +110,17 @@
                         "http://i.imgur.com/HwFLvUS.png",
                         "http://i.imgur.com/rVcWguu.png",
                         "http://i.imgur.com/Ki7JQIv.png"
+                    ]
+          },
+          {
+            "itemId": "llama",
+            "title": "Llama coat stand - 2015",
+            "text": "<p>The typical coat stand is a very traditional affair. It is commonly found throughout film and TV media as a varnished, dark wood that sits in the corner of every lobby.</p><p>My aim with this piece is to challenge the traditional coat stand, which is often overlooked in a room, and turn it into a sleek, modern talking point. Having an animal head gives the design a personality, and makes it fun to hang up your hat.</p>",
+            "cover": "http://i.imgur.com/03lZIme.jpg",
+            "carousel": true,
+            "images": [
+                        "http://i.imgur.com/ogc7vJe.jpg",
+                        "http://i.imgur.com/LppgkkM.jpg"
                     ]
           },
           {
